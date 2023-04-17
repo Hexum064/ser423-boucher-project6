@@ -1,4 +1,4 @@
-import { combineReducers, createStore } from 'redux';
+import { combineReducers, legacy_createStore as createStore } from 'redux';
 
 import {
     fetchPhotos,
@@ -16,6 +16,7 @@ export default store;
 store.currentStateStr = '';
 const unsubscribe = store.subscribe(() => {
     console.log(store.getState());
+    
 });
 
 store.dispatch(fetchPhotos());

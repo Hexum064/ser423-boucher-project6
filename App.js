@@ -3,15 +3,18 @@ import {
   StyleSheet,
   SafeAreaView,
   View,
-  Text
+  Text,
 } from 'react-native';
 import Album from './components/Album';
 import store from './redux';
-
+const data = JSON.stringify(store.getState());
 const App = () => (
-  <SafeAreaView style={styles.container}>
-    <Album />
-  </SafeAreaView>
+  <View>
+    <SafeAreaView style={styles.container}>
+      <Album />
+    </SafeAreaView>
+    <Text style={styles.text}>{data}</Text>
+  </View>
 );
 
 const styles = StyleSheet.create({
@@ -22,6 +25,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#000',
+    marginTop: 100,
   },
 });
 export default App;
