@@ -55,7 +55,7 @@ export default class Album extends Component {
     storeNext = () => {
 
         if (this.state.currentIndex === 3) {
-            alert('No more photos.');
+            alert('No more photos to add.');
             return;
         }
 
@@ -85,7 +85,7 @@ export default class Album extends Component {
                 <ThumbnailURLText>{this.state.currentPhoto?.thumbnailUrl}</ThumbnailURLText>
                 <NextButton>
                     <ButtonText onPress={() => this.storeNext()}>
-                        Next
+                        Add Next
                     </ButtonText>
                 </NextButton>
 
