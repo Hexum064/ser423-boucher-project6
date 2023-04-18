@@ -1,20 +1,25 @@
+/*
+
+Author: Branden Boucher
+Class: SER423
+Project: 6
+
+*/
+
 import React, { Component } from 'react';
 import {
   StyleSheet,
   SafeAreaView,
   View,
-  Text,
+
 } from 'react-native';
 import Album from './components/Album';
-import store from './redux';
-const data = JSON.stringify(store.getState());
+
 const App = () => (
-  <View>
-    <SafeAreaView style={styles.container}>
-      <Album />
-    </SafeAreaView>
-    <Text style={styles.text}>{data}</Text>
-  </View>
+
+  <SafeAreaView style={styles.container}>
+    <Album />
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
@@ -28,4 +33,7 @@ const styles = StyleSheet.create({
     marginTop: 100,
   },
 });
+
+
+
 export default App;
