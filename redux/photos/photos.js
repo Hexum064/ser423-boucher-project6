@@ -1,4 +1,11 @@
 
+/*
+
+Author: Branden Boucher
+Class: SER423
+Project: 6
+
+*/
 const photoMap = [
     {
         "albumid": '1',

@@ -1,3 +1,10 @@
+/*
+
+Author: Branden Boucher
+Class: SER423
+Project: 6
+
+*/
 import { Component } from 'react';
 import glamorous from 'glamorous-native';
 import store from '../../redux';
